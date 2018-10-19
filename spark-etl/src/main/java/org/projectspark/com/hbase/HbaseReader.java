@@ -154,6 +154,12 @@ public class HbaseReader extends org.projectspark.com.hbase.Reader {
 
 	}
 
+	
+	
+	public int  function2() {
+		return 0;
+		
+	}
 	@Override
 	public <T> Dataset<T> readDataSet(Class<T> klass) throws NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		readDataFrame().as(Encoders.bean(klass));
